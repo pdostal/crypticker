@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  web:
+    build: .
+    hostname: crypticker
+    domainname: ""
+    links:
+      - redis
+    network_mode: bridge
+    restart: always
+  redis:
+    image: redis:alpine
+    volumes:
+      - ./redis:/data:rw
+    network_mode: bridge
+    restart: always

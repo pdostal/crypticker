@@ -1,0 +1,11 @@
+---
+mqtt_host: iot.siliconhill.cz
+mqtt_port: 1883
+mqtt_topic: '/pdostalcz/crypticker/'
+wallets:
+  BTC:
+    - address: 1GAzEwDKedSoai6n4pV9Xh7cGZCsu749Vy
+      name: Pavel's BTC wallet
+  LTC:
+    - address: Lcqy37UbkjBqNMo7XHDj6uNdztbizwyQwH
+      name: Pavel's LTC wallet
